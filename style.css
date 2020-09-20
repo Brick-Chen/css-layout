@@ -5,10 +5,97 @@ html {
     font-size: 18px;
     font-family: "Helvetica Neue", serif;
     line-height: 1.5em;
+    /* overflow-y: hidden; */
+}
+
+body header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+body header h1 {
+    text-align: center;
 }
 
 ul {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+}
+
+ul li {
+    margin-right: 5px;
+}
+
+ul li a {
+    color: white;
+}
+
+ul li a:hover {
+    color: yellow;
+}
+
+main section.description {
+    display: grid;
+    background-color: gainsboro;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+main section.description img {
+    width: 400px;
+    height: 450px;
+    padding-top: 120px;
+    padding-left: 140px;
+    grid-row: 1 / 4;
+}
+
+main section.description h2 {
+    grid-row: 1;
+    margin-top: 120px;
+}
+
+main section p.description-p1 {
+    padding-right: 140px;
+}
+
+main section p.description-p2 {
+    grid-row: 4;
+    grid-column: 1 / 3;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+main section.relationship {
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 2fr 1fr;
+}
+
+main section.relationship img {
+    grid-row: 1 / 4;
+    grid-column: 2;
+    width: 400px;
+    height: 450px;
+}
+
+main section.relationship h2 {
+    padding-left: 140px;
+}
+
+main section.relationship .relationship-p1 {
+    padding-left: 140px;
+}
+
+main section.relationship .relationship-p2 {
+    padding-left: 140px;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgrey;
+    padding: 20px;
 }
