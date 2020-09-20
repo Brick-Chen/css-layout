@@ -42,7 +42,7 @@ main section.description {
     display: grid;
     background-color: gainsboro;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 150px 120px;
 }
 
 main section.description img {
